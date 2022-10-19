@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.father {
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.block1 {
+    width: 100%;
+    height: 28%;
+    background: royalblue;
+}
+
+.block2 {
+    width: 100%;
+    height: 23%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block3 {
+    width: 100%;
+    height: 43%;
+    background: royalblue;
+}
+
+.inner_block {
+    width: 31%;
+    height: 100%;
+    background: midnightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
