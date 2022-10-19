@@ -1,0 +1,14 @@
+h1, h2, a {
+    background: chocolate;
+    color: black;
+}
+
+p, ul > li {
+    background: bisque;
+    color: black;
+}
+
+img {
+    max-width: 400px;
+    min-width: 200px;
+}
