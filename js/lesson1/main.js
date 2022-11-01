@@ -52,7 +52,7 @@ console.log(typeof c);
 let firstName1 = prompt('Fisrt Name:');
 let middleName1 = prompt('Middle Name:');
 let lastName1 = prompt('Last Name:');
-let age = prompt('Age:');
+let age = +prompt('Age:');
 
 console.log(firstName1);
 console.log(middleName1);
