@@ -2,7 +2,7 @@ let container = document.createElement('div');
 document.body.append(container);
 
 fetch ('https://jsonplaceholder.typicode.com/users')
-    .then((data) => data.json())
+    .then(users => users.json())
     .then(users => {
         for (const user of users) {
             let div = document.createElement('div');
