@@ -8,7 +8,7 @@ fetch ('https://jsonplaceholder.typicode.com/users')
             let div = document.createElement('div');
             div.innerText = `${user.id} ${user.name}`;
             let a = document.createElement('a');
-            a.innerText = `More`;
+            a.innerText = `About`;
             a.href = `user-details.html?id=${user.id}`;
             div.appendChild(a);
             container.appendChild(div);
