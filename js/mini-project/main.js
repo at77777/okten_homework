@@ -1,5 +1,7 @@
 let container = document.createElement('div');
+container.classList.add('container');
 document.body.append(container);
+
 
 fetch ('https://jsonplaceholder.typicode.com/users')
     .then(users => users.json())
@@ -7,11 +9,16 @@ fetch ('https://jsonplaceholder.typicode.com/users')
         for (const user of users) {
             let div = document.createElement('div');
             div.innerText = `${user.id} ${user.name}`;
+            div.classList.add('user-block');
+            let btn = document.createElement('div');
+            btn.classList.add('btn')
             let a = document.createElement('a');
             a.innerText = `About`;
             a.href = `user-details.html?id=${user.id}`;
-            div.appendChild(a);
+            btn.appendChild(a);
+            div.appendChild(btn);
             container.appendChild(div);
+
         }
         }
     )

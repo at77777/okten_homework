@@ -1,9 +1,11 @@
 let container = document.createElement('div');
+container.classList.add('container');
 document.body.append(container);
 
 let url = new URL(location.href);
 let userId = url.searchParams.get('id');
 let div = document.createElement('div');
+div.classList.add('user-details-block');
 
 fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
     .then(details => details.json())

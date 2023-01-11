@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: chocolate;
+
+
+}
+
+.user-block {
+    width: 48%;
+    height: 16%;
+    min-height: 50px;
+    border: black solid 2px;
+    margin: 3px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: blanchedalmond;
+
+}
+
+.btn {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: black solid 3px;
+    margin: 5px;
+    background: bisque;
+}
+
+.user-details-block {
+    width: 98%;
+    margin: 5px;
+    border: black solid 2px;
+    background: blanchedalmond;
+
+}
